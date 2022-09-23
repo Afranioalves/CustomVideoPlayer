@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/boxicons-2.1.2/css/boxicons.css" />
+    <title>My Video Player</title>
+</head>
+<body>
+
+    <main class="container">
+        <div class="box-video">
+           
+            <video  class="main-video">
+                <source src="file/OneMoreLight-Linkin_Park.mp4" type="video/mp4">
+            </video>
+            <button class="btn-play-pause"><i class="bx bx-play icon"></i></button>
+        </div>
+        <div class="box-option">
+            <input type="range" min="0" value="0" class="timeline"/><br />
+            <p class="time">
+                <code>
+                    <span class="time-current">-:-:-</span> / 
+                    <span class="time-end">-:-:-</span>
+                </code>
+            </p>
+            <button class="btn-volume"><i class="bx bx-volume-full icon-volume"></i></button>
+            <input type="range" min="0" value="1" max="1" step="0.1" class="volume"/>
+           
+        </div>
+    </main>
+    
+
+    <script src="script/index.js"></script>
+</body>
+</html>
